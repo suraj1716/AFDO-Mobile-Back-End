@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 49160:9191
-    restart: unless-stopped
+    restart: on-failure
     tty: true
     stdin_open: true
   mongo:
